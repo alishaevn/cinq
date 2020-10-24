@@ -4,8 +4,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.5'
 
 gem 'bootsnap', '>= 1.4.2', require: false # Reduces boot times through caching; required in config/boot.rb
+gem 'carrierwave', '~> 2.1' # Upload files in your Ruby applications, map them to a range of ORMs, store them on different backends.
 gem 'devise', '~> 4.7', '>= 4.7.3' # Flexible authentication solution for Rails with Warden
 gem 'jbuilder', '~> 2.7' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'mini_magick', '~> 4.10', '>= 4.10.1' # Manipulate images with minimal use of memory via ImageMagick / GraphicsMagick
 gem 'puma', '~> 4.1' # Use Puma as the app server
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3' # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'sass-rails', '>= 6' # Use SCSS for stylesheets
